@@ -1,2 +1,49 @@
-/* Here goes your CSS */
 @import 'layout/main';
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+
+.popup {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.popup-content {
+    
+ position: relative;
+ 
+  background: #ffffff;
+  max-width: 320px;
+  margin: 0 auto 100px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+ 
+}/* Here goes your CSS */
+
+.form{
+    
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    max-width: 250px;
+    margin: 0 auto 100px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    
+  }

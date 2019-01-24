@@ -11,12 +11,37 @@
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
-      <!-- Display success message below -->
+    <button id="show-popup-form" class="btn btn-main" onclick="document.getElementById('popup-wrapper').style.display='block'" >
+      Click me!</button>
     </section>
-    <div class="popup">
-      <!-- Here goes your popup form HTML code -->
+  <div id="popup-wrapper" class="popup"> 
+      
+          <div class="container">
+              <div class="main" >
+                  <form class="popup-content animate">
+                      <h2>Login</h2>
+   <div class="form">    
+    <div id="wrapper">
+     <form method="POST"  onsubmit="return Validate()" name="vform" >
+       <div id="email_div">
+         <input type="email" name="email" class="textInput" placeholder="E-mail">
+         <div id="email_error"></div>
+       </div>
+       <div id="password_div">
+           <input type="password" name="password" class="textInput"  placeholder="Password">
+           <div id="password_error"></div>
+            <input type="checkbox" checked="checked"> 
+          </div> 
+      
+            <label>I agree to terms & conditions.</label>    
+            <input id="button" type="submit" name="register" value="Submit" class="btn">
+          </div>
+        </form>
+      </div>
     </div>
-    <script src="js/index.js" charset="utf-8"></script>
-  </body>
-</html>
+
+    </form> 
+      <script src="js/index.js" charset="utf-8"></script>
+    </body>
+      </html>
+      
